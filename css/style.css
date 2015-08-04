@@ -1,7 +1,52 @@
+
 .pull-quote {
   background-color: #000;
   height: 200px;
   text-align: center;
-  padding-top: 4em;
+  padding: 4em 2em 2em;
   color: #fff;
+}
+
+img {
+	overflow:hidden;
+}
+
+.hover img {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover:hover img {
+	opacity: .5;
+}
+
+.img-wrap a {
+  text-decoration:none;
+  color: #000;
+  font-family: 'helvetica', sans-serif;
+  padding-top: 3rem;
+  font-size: 3em;
+  text-align: center;
+  top:0;
+  opacity:0;
+  filter: alpha(opacity = 0);
+  position:absolute;
+  width:100%;
+  height:100%;
+  z-index:1000;
+    -webkit-transition: all 300ms ease-out;
+		-moz-transition: all 300ms ease-out;
+		-o-transition: all 300ms ease-out;
+		-ms-transition: all 300ms ease-out;
+	transition: all 300ms ease-out;
+}
+
+.img-wrap {
+  position:relative;
+
+}
+
+.img-wrap:hover a {
+  opacity:0.75;
+  filter: alpha(opacity = 75);
 }
