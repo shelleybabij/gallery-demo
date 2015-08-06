@@ -1,7 +1,9 @@
 header {
   height: 40px;
   width: 100%;
-  background-color: #fff;
+  background-image:url("../img/paper.jpg");
+  background-size: cover;
+  background-position: center;
   position: fixed;
   z-index: 4999;
 }
@@ -10,8 +12,10 @@ h1 {
   display: inline-block;
   float: right;
   margin-top: 0;
-  font-size: 1.5em;
+  font-size: 1em;
   padding: 5px;
+  margin-right: 10px;
+  text-transform: uppercase;
 }
 
 .menu-side{
@@ -77,11 +81,12 @@ padding: 10px;
 }
 
 .pull-quote {
-  background-color: #000;
-  height: 200px;
+  background-image:url("../img/paper.jpg");
+  background-size: cover;
+  background-position: center;
   text-align: center;
   padding: 4em 2em 2em;
-  color: #fff;
+  color: #000;
 }
 
 img {
@@ -125,11 +130,23 @@ img {
 }
 
 .img-wrap:hover a {
-  opacity:0.75;
+  opacity:0.95;
   filter: alpha(opacity = 75);
 }
 
 .wrapper {
   margin-left: 10%;
   margin-right: 10%;
+}
+
+@media only screen and (min-width: 30em){
+  .img-wrap a {
+    font-size: 1.5em;
+}
+}
+
+@media only screen and (min-width: 50em){
+  .img-wrap a {
+    font-size: 3em;
+  }
 }
