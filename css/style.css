@@ -89,6 +89,11 @@ padding: 10px;
   color: #000;
 }
 
+.pq{
+  max-width: 700px;
+  margin: 0 auto;
+}
+
 img {
 	overflow:hidden;
 }
