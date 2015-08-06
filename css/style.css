@@ -1,3 +1,66 @@
+.menu-side{
+  position: fixed;
+  background-color: #000;
+  border-right: 1px solid #000;
+  color: #fff;
+  top: 0;
+  left: -231px;
+  width: 210px;
+  height: 100%;
+  padding:10px;
+}
+
+.menu {
+  overflow-x: hidden;
+  position: relative;
+  left: 0;
+}
+
+.menu-open {
+  left: 231px;
+}
+
+.menu-open .menu-side {
+  left: 0;
+}
+
+.menu-side,
+.menu {
+  -webkit-transition: left 0.2s ease;
+  -moz-transition: left 0.2s ease;
+  transition: left 0.2s ease;
+}
+
+.menu-toggle {
+padding: 10px;
+z-index: 500000;
+position: fixed;
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus,
+.menu-toggle:active{
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.menu-side li a{
+    display:block;
+    padding: 1em;
+    text-align: right;
+    position:relative;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Open Sans', Ariel, sans-serif;
+}
+
+.menu-side li a:hover,
+.menu-side li a:focus,
+.menu-side li a:active {
+  color: #666;
+  background-color: #fff;
+}
 
 .pull-quote {
   background-color: #000;
@@ -16,6 +79,7 @@ img {
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
 }
+
 .hover:hover img {
 	opacity: .5;
 }
@@ -23,7 +87,7 @@ img {
 .img-wrap a {
   text-decoration:none;
   color: #000;
-  font-family: 'helvetica', sans-serif;
+  font-family: 'Georgia', serif;
   padding-top: 3rem;
   font-size: 3em;
   text-align: center;
@@ -50,3 +114,4 @@ img {
   opacity:0.75;
   filter: alpha(opacity = 75);
 }
+
