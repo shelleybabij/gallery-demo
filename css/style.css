@@ -139,10 +139,15 @@ img {
   filter: alpha(opacity = 75);
 }
 
-.wrapper {
-  margin-left: 10%;
-  margin-right: 10%;
+.footer {
+  background-image:url("../img/paper.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 1em 1em 1em;
+  color: #000;
 }
+
 
 @media only screen and (min-width: 30em){
   .img-wrap a {
@@ -154,4 +159,10 @@ img {
   .img-wrap a {
     font-size: 3em;
   }
+
+  .wrapper {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
 }
